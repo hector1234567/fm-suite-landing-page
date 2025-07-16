@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@100..900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Epilogue", serif;
+  font-size: 1.8rem;
+  line-height: 160%;
+  letter-spacing: 0.01rem;
+  font-weight: 400;
+  background-color: hsl(30, 29%, 97%);
+  color: hsl(218, 20%, 36%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 2.4rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 110.9rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+.nav__logo {
+  height: 2.48rem;
+}
+.nav__logo img {
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 9.6rem;
+  margin-bottom: 13.5rem;
+}
+.header__content {
+  height: 60rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: url(/assets/image-hero-portrait.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.header__content h1 {
+  font-family: "Epilogue", serif;
+  font-size: 7.2rem;
+  line-height: 110%;
+  letter-spacing: -0.1rem;
+  color: hsl(219, 42%, 16%);
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+@media (max-width: 500) {
+  .header__content h1 {
+    font-size: 5.6rem;
+    letter-spacing: -0.078rem;
+  }
+}
+@media (max-width: 300) {
+  .header__content h1 {
+    font-size: 3.8rem;
+    letter-spacing: -0.053rem;
+  }
+}
+.header__content h1 strong {
+  font-weight: 700;
+}
+.header__content h1 .over {
+  position: relative;
+}
+.header__content h1 .over::before {
+  content: "";
+  position: absolute;
+  top: -6.432rem;
+  width: 100%;
+  height: 5rem;
+  background-image: url(/assets/pattern-curved-line-1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+.header__content p {
+  max-width: 35rem;
+  margin-bottom: 6.4rem;
+}
+.header__facts {
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+  width: 19rem;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  gap: 15.319rem;
+  align-items: center;
+  background-color: hsl(219, 42%, 16%);
+  color: hsl(30, 33%, 93%);
+  padding: 0 12.5rem;
+  border-radius: 1.5rem;
+  background-image: url(/assets/pattern-curved-line-2.svg);
+  background-position: center top 20rem;
+  background-repeat: no-repeat;
+  margin-bottom: 10.42rem;
+}
+.main__figure {
+  height: 58.956rem;
+  display: flex;
+  margin-top: -5.5rem;
+  background-image: url(/assets/pattern-blur.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom -8rem;
+  background-size: 120%;
+}
+.main__figure img {
+  height: auto;
+}
+.main h2 {
+  font-family: "Epilogue", serif;
+  font-size: 4.8rem;
+  line-height: 120%;
+  letter-spacing: -0.05rem;
+  margin-bottom: 3.2rem;
+  font-weight: 400;
+  color: hsl(30, 29%, 97%);
+}
+.main h2 strong {
+  font-weight: 700;
+}
+.main__text {
+  font-family: "Epilogue", serif;
+  font-size: 2rem;
+  line-height: 160%;
+  letter-spacing: 0.011rem;
+  margin-bottom: 2.4rem;
+}
+.main__author {
+  font-family: "Epilogue", serif;
+  font-size: 1.8rem;
+  line-height: 160%;
+  letter-spacing: -0.018rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: hsl(30, 29%, 97%);
+}
+.main__reference {
+  font-family: "Epilogue", serif;
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__logo {
+  height: 2.48rem;
+}
+.footer__logo img {
+  height: 100%;
+}
+.footer__copy {
+  font-family: "Epilogue", serif;
+  font-size: 1.5rem;
+  line-height: 160%;
+  color: hsl(218, 20%, 36%);
+}
+.footer__social {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.footer__social a {
+  width: 2rem;
+  display: flex;
+}
+.footer__social a svg {
+  fill: hsl(219, 42%, 16%);
+}
+
+.button {
+  font-family: "Epilogue", serif;
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: -0.016rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+.button--primary {
+  background-color: hsl(219, 42%, 16%);
+  color: hsl(30, 29%, 97%);
+  border: none;
+  border-radius: 0.6rem;
+  padding: 2rem 3.2rem 1.6rem 3.2rem;
+}
+.button--secondary {
+  background-color: transparent;
+  color: hsl(219, 42%, 16%);
+  border: 0.2rem solid hsl(219, 42%, 16%);
+  border-radius: 0.6rem;
+  padding: 1.6rem 2.4rem 1.2rem 2.4rem;
+}
+
+.fact__number {
+  font-family: "Epilogue", serif;
+  font-size: 4.8rem;
+  line-height: 120%;
+  letter-spacing: -0.05rem;
+  font-weight: 700;
+  color: hsl(219, 42%, 16%);
+}
+.fact__name {
+  font-family: "Epilogue", serif;
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: 0.25rem;
+  color: hsl(218, 20%, 36%);
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,37 @@
+@use "../base/typography.scss" as t;
+@use "../base/colors.scss" as c;
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    height: 2.48rem;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &__copy {
+    @include t.text-8;
+    color: c.$Neutral-500;
+  }
+
+  &__social {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+
+    a {
+      width: 2rem;
+      display: flex;
+
+      svg {
+        fill: c.$Neutral-900;
+      }
+    }
+  }
+}

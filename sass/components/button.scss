@@ -1,0 +1,24 @@
+@use "../base/typography.scss" as t;
+@use "../base/colors.scss" as c;
+
+.button {
+  @include t.text-6;
+  text-decoration: none;
+  font-weight: t.$Bold;
+
+  &--primary {
+    background-color: c.$Neutral-900;
+    color: c.$Neutral-0;
+    border: none;
+    border-radius: 0.6rem;
+    padding: 2rem 3.2rem 1.6rem 3.2rem;
+  }
+
+  &--secondary {
+    background-color: transparent;
+    color: c.$Neutral-900;
+    border: 0.2rem solid c.$Neutral-900;
+    border-radius: 0.6rem;
+    padding: 1.6rem 2.4rem 1.2rem 2.4rem;
+  }
+}

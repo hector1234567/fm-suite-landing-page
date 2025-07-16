@@ -1,0 +1,16 @@
+@use "../base/typography.scss" as t;
+@use "../base/colors.scss" as c;
+
+.fact {
+  &__number {
+    @include t.text-2;
+    font-weight: t.$Bold;
+    color: c.$Neutral-900;
+  }
+
+  &__name {
+    @include t.text-7;
+    color: c.$Neutral-500;
+    text-transform: uppercase;
+  }
+}

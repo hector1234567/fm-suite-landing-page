@@ -1,0 +1,17 @@
+@use "../base/typography.scss" as t;
+@use "../base/colors.scss" as c;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8rem;
+
+  &__logo {
+    height: 2.48rem;
+
+    img {
+      height: 100%;
+    }
+  }
+}
