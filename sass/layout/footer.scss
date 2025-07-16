@@ -29,6 +29,12 @@
       width: 2rem;
       display: flex;
 
+      &:focus-visible {
+        outline: 0.2rem solid c.$Neutral-900;
+        border-radius: 0.2rem;
+        outline-offset: 0.2rem;
+      }
+
       svg {
         fill: c.$Neutral-900;
         transition: fill 0.3s ease;
