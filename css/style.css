@@ -23,6 +23,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 5rem 2.4rem;
+  background-image: linear-gradient(to top, hsl(30, 33%, 93%) 46.4rem, transparent 46.5rem);
 }
 
 .container {
@@ -202,6 +203,10 @@ body {
 }
 .footer__social a svg {
   fill: hsl(219, 42%, 16%);
+  transition: fill 0.3s ease;
+}
+.footer__social a:hover svg {
+  fill: hsl(218, 20%, 36%);
 }
 
 .button {
@@ -211,6 +216,8 @@ body {
   letter-spacing: -0.016rem;
   text-decoration: none;
   font-weight: 700;
+  transition: all 0.3s ease-in 0.2s;
+  backface-visibility: hidden;
 }
 .button--primary {
   background-color: hsl(219, 42%, 16%);
@@ -218,6 +225,13 @@ body {
   border: none;
   border-radius: 0.6rem;
   padding: 2rem 3.2rem 1.6rem 3.2rem;
+  background-image: linear-gradient(135deg, #a060ff 0%, #cb30e3 49.21%, #ffa84e 100%);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  background-position: center;
+}
+.button--primary:hover {
+  background-size: 100% 100%;
 }
 .button--secondary {
   background-color: transparent;
@@ -225,6 +239,10 @@ body {
   border: 0.2rem solid hsl(219, 42%, 16%);
   border-radius: 0.6rem;
   padding: 1.6rem 2.4rem 1.2rem 2.4rem;
+}
+.button--secondary:hover {
+  background-color: hsl(219, 42%, 16%);
+  color: hsl(30, 29%, 97%);
 }
 
 .fact__number {
