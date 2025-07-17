@@ -6,6 +6,11 @@
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: t.$Mobile) {
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
   &__logo {
     height: 2.48rem;
 

@@ -7,6 +7,10 @@
   align-items: center;
   margin-bottom: 8rem;
 
+  @media (max-width: t.$Mobile) {
+    margin-bottom: 6.4rem;
+  }
+
   &__logo {
     height: 2.48rem;
 

@@ -28,6 +28,15 @@
     }
   }
 
+  @media (max-width: t.$Mobile) {
+    padding: 0 2.1rem;
+    margin-bottom: 5.62rem;
+
+    &__content {
+      margin-bottom: 4rem;
+    }
+  }
+
   &__figure {
     height: 58.956rem;
     display: flex;

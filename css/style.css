@@ -10,6 +10,21 @@
 html {
   font-size: 62.5%;
 }
+@media (max-width: 375px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 335px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media (max-width: 277px) {
+  html {
+    font-size: 35%;
+  }
+}
 
 body {
   font-family: "Epilogue", serif;
@@ -30,6 +45,12 @@ body {
     padding: 3.2rem;
   }
 }
+@media (max-width: 654px) {
+  body {
+    padding: 2.4rem 1.6rem;
+    padding-bottom: 4rem;
+  }
+}
 
 .container {
   width: 100%;
@@ -40,12 +61,22 @@ body {
     max-width: 70.4rem;
   }
 }
+@media (max-width: 615px) {
+  .container {
+    max-width: 34.3rem;
+  }
+}
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 8rem;
+}
+@media (max-width: 615px) {
+  .nav {
+    margin-bottom: 6.4rem;
+  }
 }
 .nav__logo {
   height: 2.48rem;
@@ -81,6 +112,14 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
+@media (max-width: 615px) {
+  .header__content {
+    height: auto;
+    padding-bottom: 30.7rem;
+    background-image: url(/assets/image-hero-landscape@2x.png);
+    background-position: bottom;
+  }
+}
 .header__content h1 {
   font-family: "Epilogue", serif;
   font-size: 7.2rem;
@@ -96,10 +135,15 @@ body {
     letter-spacing: -0.078rem;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 615px) {
   .header__content h1 {
     font-size: 3.8rem;
     letter-spacing: -0.053rem;
+  }
+}
+@media (max-width: 615px) {
+  .header__content h1 {
+    margin-bottom: 2.4rem;
   }
 }
 .header__content h1 strong {
@@ -119,9 +163,21 @@ body {
   background-size: contain;
   background-position: bottom;
 }
+@media (max-width: 615px) {
+  .header__content h1 .over::before {
+    top: -5.432rem;
+    background-position: center bottom;
+  }
+}
 .header__content p {
   max-width: 35rem;
   margin-bottom: 6.4rem;
+}
+@media (max-width: 615px) {
+  .header__content p {
+    max-width: unset;
+    margin-bottom: 4rem;
+  }
 }
 .header__facts {
   display: flex;
@@ -135,6 +191,13 @@ body {
     gap: 0;
     justify-content: space-between;
     width: 100%;
+  }
+}
+@media (max-width: 615px) {
+  .header__facts {
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
   }
 }
 
@@ -163,6 +226,15 @@ body {
   }
   .main__content {
     margin-bottom: 6.4rem;
+  }
+}
+@media (max-width: 615px) {
+  .main {
+    padding: 0 2.1rem;
+    margin-bottom: 5.62rem;
+  }
+  .main__content {
+    margin-bottom: 4rem;
   }
 }
 .main__figure {
@@ -223,6 +295,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 615px) {
+  .footer {
+    flex-direction: column;
+    gap: 3.2rem;
+  }
 }
 .footer__logo {
   height: 2.48rem;

@@ -27,11 +27,22 @@
     background-repeat: no-repeat;
     background-size: contain;
 
+    @media (max-width: t.$Mobile) {
+      height: auto;
+      padding-bottom: calc(24.3rem + 6.4rem);
+      background-image: url(/assets/image-hero-landscape@2x.png);
+      background-position: bottom;
+    }
+
     h1 {
       @include t.text-1;
       color: c.$Neutral-900;
       font-weight: t.$Regular;
       margin-bottom: 4rem;
+
+      @media (max-width: t.$Mobile) {
+        margin-bottom: 2.4rem;
+      }
 
       strong {
         font-weight: t.$Bold;
@@ -49,6 +60,11 @@
           background-repeat: no-repeat;
           background-size: contain;
           background-position: bottom;
+
+          @media (max-width: t.$Mobile) {
+            top: -5.432rem;
+            background-position: center bottom;
+          }
         }
       }
     }
@@ -56,6 +72,11 @@
     p {
       max-width: 35rem;
       margin-bottom: 6.4rem;
+
+      @media (max-width: t.$Mobile) {
+        max-width: unset;
+        margin-bottom: 4rem;
+      }
     }
   }
 
@@ -70,6 +91,12 @@
       gap: 0;
       justify-content: space-between;
       width: 100%;
+    }
+
+    @media (max-width: t.$Mobile) {
+      flex-direction: column;
+      gap: 4rem;
+      align-items: center;
     }
   }
 }
