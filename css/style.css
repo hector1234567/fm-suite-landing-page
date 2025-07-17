@@ -331,7 +331,6 @@ body {
   gap: 3.2rem;
 }
 .footer__social a {
-  width: 2rem;
   display: flex;
 }
 .footer__social a:focus-visible {
