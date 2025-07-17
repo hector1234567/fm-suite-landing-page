@@ -13,4 +13,9 @@
     color: c.$Neutral-500;
     text-transform: uppercase;
   }
+
+  @media (max-width: t.$Tablet) {
+    width: 19.2rem;
+    text-align: center;
+  }
 }
