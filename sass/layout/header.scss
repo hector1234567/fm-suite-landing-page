@@ -27,11 +27,19 @@
     background-repeat: no-repeat;
     background-size: contain;
 
+    @media (min-resolution: 192dpi) {
+      background-image: url(/assets/image-hero-portrait@2x.png);
+    }
+
     @media (max-width: t.$Mobile) {
       height: auto;
       padding-bottom: calc(24.3rem + 6.4rem);
-      background-image: url(/assets/image-hero-landscape@2x.png);
+      background-image: url(/assets/image-hero-landscape.png);
       background-position: bottom;
+
+      @media (min-resolution: 192dpi) {
+        background-image: url(/assets/image-hero-landscape@2x.png);
+      }
     }
 
     h1 {

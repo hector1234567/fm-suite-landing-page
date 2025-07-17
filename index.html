@@ -55,7 +55,16 @@
     </header>
     <main class="main container">
       <figure class="main__figure">
-        <img src="/assets/image-jeremy-large@2x.png" alt="jeremy" />
+        <img
+          src="/assets/image-jeremy-large@2x.png"
+          alt="jeremy"
+          srcset="
+            /assets/image-jeremy-large@2x.png 722w,
+            /assets/image-jeremy-large.png    361w,
+            /assets/image-jeremy-small@2x.png 486w,
+            /assets/image-jeremy-small.png    243w
+          "
+        />
       </figure>
       <div class="main__content">
         <h2>It just <strong>works</strong>.</h2>

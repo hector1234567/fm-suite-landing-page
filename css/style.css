@@ -112,12 +112,22 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
+@media (min-resolution: 192dpi) {
+  .header__content {
+    background-image: url(/assets/image-hero-portrait@2x.png);
+  }
+}
 @media (max-width: 615px) {
   .header__content {
     height: auto;
     padding-bottom: 30.7rem;
-    background-image: url(/assets/image-hero-landscape@2x.png);
+    background-image: url(/assets/image-hero-landscape.png);
     background-position: bottom;
+  }
+}
+@media (max-width: 615px) and (min-resolution: 192dpi) {
+  .header__content {
+    background-image: url(/assets/image-hero-landscape@2x.png);
   }
 }
 .header__content h1 {
